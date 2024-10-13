@@ -11,6 +11,8 @@ import {
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
+//message
+
 const MessageCarousel = () => {
   return (
     <Carousel className="w-full max-w-xs h-20">

@@ -66,6 +66,7 @@ const Navbar = () => {
                 <li>
                   <Link to="/browse">Browse</Link>
                 </li>
+
                 <li>
                   <Popover>
                     <PopoverTrigger asChild>
