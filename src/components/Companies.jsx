@@ -10,6 +10,7 @@ import { setSearchByText } from "@/redux/companySlice";
 const Companies = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
   useGetAllCompanies();
   const { allcompanys } = useSelector((state) => state.company);
   const [filter, setFilter] = useState("");
