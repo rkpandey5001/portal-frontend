@@ -12,6 +12,7 @@ const Companies = () => {
   const dispatch = useDispatch();
 
   useGetAllCompanies();
+
   const { allcompanys } = useSelector((state) => state.company);
   const [filter, setFilter] = useState("");
   const { singlecompany } = useSelector((state) => state.company);
