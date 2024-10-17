@@ -17,7 +17,7 @@ const Home = () => {
     }
   }, []);
   return (
-    <div>
+    <div className="sm:w-[80%] md:w-[80%] mx-auto">
       <HeroSection />
       <CategoryCarousel />
       <LatestJobs />

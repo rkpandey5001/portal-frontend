@@ -62,9 +62,9 @@ const SignUp = () => {
     }
   }, []);
   return (
-    <div className="flex items-center justify-center max-w-7xl mx-auto">
+    <div className="flex items-center justify-center max-w-7xl mx-auto sm:my-14 md:my-8">
       <form
-        className="w-1/2 border border-gray-200 rounded-md p-4 my-10"
+        className="xsm:w-[80%] sm:w-[70%] md:w-1/2 border border-gray-200 rounded-md p-4 xsm:my-20 sm:my-14 md:my-10"
         onSubmit={handleSubmit}
       >
         <h1 className="font-bold text-xl mb-5">Sign Up</h1>

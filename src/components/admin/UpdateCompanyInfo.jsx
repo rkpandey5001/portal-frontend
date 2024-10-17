@@ -90,7 +90,7 @@ const UpdateCompanyInfo = () => {
   return (
     <div className="max-w-xl mx-auto my-10">
       <form onSubmit={submitHandler}>
-        <div className="flex items-center  gap-5 p-8">
+        <div className="flex items-center gap-5 xsm:p-4 sm:p-8">
           <Button
             onClick={() => navigate(-1)}
             variant="outline"
@@ -99,9 +99,11 @@ const UpdateCompanyInfo = () => {
             <ArrowLeft />
             <span>Back</span>
           </Button>
-          <h1 className="font-semibold text-xl">Company SetUp</h1>
+          <h1 className="font-semibold xsm:text-sm  sm:text-md md:text-xl">
+            Company SetUp
+          </h1>
         </div>
-        <div className="grid grid-cols-2 gap-5 p-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 p-8">
           <Label>Company Name</Label>
           <Input
             type="text"

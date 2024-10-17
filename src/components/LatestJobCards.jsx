@@ -19,11 +19,14 @@ const LatestJobCards = ({ job }) => {
         <p className="text-sm text-gray-500">{job.location}</p>
       </div>
       <div>
-        <h1 className="font-bold text-lg my-2">{job?.title}</h1>
+        <h1 className="font-bold sm:text-md md:text-lg my-2">{job?.title}</h1>
         <p className="text-sm text-gray-600">{job.description}</p>
       </div>
-      <div className="flex items-center gap-2 mt-4">
-        <Badge className={"text-blue-700 font-bold"} variant="ghost">
+      <div className="flex items-center gap-2 mt-4 sm:flex-wrap md:flex-nowrap">
+        <Badge
+          className={"text-blue-700 md:font-bold sm:font-md"}
+          variant="ghost"
+        >
           {job?.position}
         </Badge>
         <Badge className={"text-[#F83002] font-bold"} variant="ghost">

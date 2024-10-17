@@ -16,7 +16,7 @@ const JobsCard = ({ jobs }) => {
   };
   return (
     <div className="p-5 rounded-md shadow-xl bg-white border border-gray-100">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap">
         <p className="text-sm text-gray-500">
           {createdDate(jobs.createdAt)} days
         </p>
@@ -44,7 +44,7 @@ const JobsCard = ({ jobs }) => {
         <h1 className="font-bold text-lg my-2">{jobs.title}</h1>
         <p className="text-sm text-gray-600">{jobs.description}</p>
       </div>
-      <div className="flex items-center gap-2 mt-4">
+      <div className="flex items-center gap-2 mt-4 flex-wrap">
         <Badge className={"text-blue-700 font-bold"} variant="ghost">
           {jobs.position}
         </Badge>
@@ -55,7 +55,7 @@ const JobsCard = ({ jobs }) => {
           {jobs.salary}
         </Badge>
       </div>
-      <div className="flex items-center gap-4 mt-4">
+      <div className="md:flex items-center gap-4 mt-4 flex-wrap">
         <Button
           variant="outline"
           className="bg-black text-white"

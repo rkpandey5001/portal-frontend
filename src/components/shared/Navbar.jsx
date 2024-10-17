@@ -37,15 +37,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white">
-      <div className="flex items-center justify-between mx-auto max-w-7xl h-16">
-        <div>
-          <h1 className="text-2xl font-bold">
-            Job <span className="text-[#F83002]">Guru ji</span>
+    <div className="bg-white sm:w-[50%] md:w-[80%] mx-auto">
+      <div className="md:flex items-center justify-between  max-w-7xl h-16 sm:m-auto ">
+        <div className=" xsm:mx-auto md:w-full xsm:text-center md:text-left my-auto">
+          <h1 className="xsm:text-2xl md:7xl font-bold ">
+            Job <span className="text-[#F83002]">Guru</span>
           </h1>
         </div>
-        <div className="flex items-center gap-12">
-          <ul className="flex font-medium items-center gap-5">
+        <div className="flex items-center  sm:gap-7 md:gap-12  rounded-lg p-2 xsm:flex-wrap md:flex-nowrap  xsm:justify-center my-auto">
+          <ul className="flex font-medium items-center gap-5 rounded-lg p-2">
             {user && user.role == "recruiter" ? (
               <>
                 <li>
@@ -90,7 +90,7 @@ const Navbar = () => {
           </ul>
 
           {!user ? (
-            <div className="flex items-center gap-2">
+            <div className="flex sm:justify-center md:items-center gap-2 sm:my-5">
               <Link to="/login">
                 <Button variant="outline">Login</Button>
               </Link>
