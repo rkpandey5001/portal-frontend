@@ -29,6 +29,7 @@ const Jobs = () => {
         <div className="xsm:w-8% md:w-20%">
           <FilterCard />
         </div>
+
         {jobsValue.length <= 0 ? (
           <span>No Jobs Found</span>
         ) : (
