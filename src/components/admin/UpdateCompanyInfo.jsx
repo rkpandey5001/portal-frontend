@@ -103,6 +103,7 @@ const UpdateCompanyInfo = () => {
             Company SetUp
           </h1>
         </div>
+
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 p-8">
           <Label>Company Name</Label>
           <Input
